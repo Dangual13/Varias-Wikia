@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html> 
+    <head> <!--Head-tag is for all meta-data (non-displayed data)-->
+        <link rel="stylesheet" type="text/css" href="Main-page-style.css" />
+        <title>Varias Wikia</title>
+        <link rel="icon" type="image/x-icon" href = "Images/Favicon (16x16) (black).ico">
+    </head>
+
+    <!--The divs are basically subdivisions, the classes say what they are and they have differing
+    markups in the css-sheet-->
+
+    <body>
+        <div class = "NavBar">
+            <ul>
+                <li><a href = "index.html" class = "NavbarLink">Home</a></li>
+                <li><a href = "map.html" class = "NavbarLink">Map</a></li>
+                <li><a href = "characters.html" class = "NavbarLink">Characters</a></li>
+                <li><a href = "arcanite.html" class = "NavbarLink">Arcanite</a></li>
+                <li><a href = "history.html" class = "NavbarLink">History</a></li>
+                <li><a href = "pantheon.html" class = "NavbarLink">Pantheon</a></li>
+                <li><a href = "races.html" class = "NavbarLink">Races</a></li>
+                <li><form onmouseover = "makeVisible(SearchWrapper)" onmouseleave = "makeHidden(SearchWrapper)">
+                    <input type="search" id="NavBarSearch" name="NavSearchbar" placeholder="Search Varias Wiki">
+                    <div id = "SearchWrapper" style = "visibility: hidden;">
+                        <template data-articleCard-template>
+                            <div class = "SearchCards" style = "display: block;" data-card>
+                            </div>
+                        </template>
+                    </div>
+                </form></li>
+            </ul>
+        </div>
+        <div class = "MainTextContainer">
+            <div class = "ContainerHeader" id = "MainPageHeader">
+                Welcome to Varias
+            </div>
+            <div>
+            <div class = "ContainerText" id = "MainText">
+                <div class = "stdContainer">
+                    <img src = "Images/Favicon (brass).svg" class = "bigImage">
+                    <p>This wikipage is a source of information on a custom RPG world made by me and my friend. Feel free to take a look around using the Nav- and Searchbar. Underneath are the current active campaigns that are being run in this world.</p>
+                </div>
+                <hr>
+                <div class = "ContainerHeader">
+                    Ongoing Campaigns
+                </div>
+                <hr>
+                <div class = "stdContainer">
+                    <div class = "contentTab">
+                        <a href="cpgn_antarianwar.html">The Antarian War</a>
+                        <span onclick="showHide(AntarianWarStoryLog, antarianwarShowHide)">
+                            <img src="Images/UI/expandBtn.svg" class = "emote" id = "antarianwarShowHide">
+                        </span>
+                    </div>
+                    <div class = "outlinedContainer" id="AntarianWarStoryLog" style = "display: none;">
+                        <ul>
+                            <template data-campaignoutline-listitem>
+                                <li>test</li>
+                            </template>
+                        </ul>
+                    </div>
+                    <div class = "contentTab">
+                        <a href="cpgn_rot.html">Remnants of Tiangkong</a>
+                        <span onclick="showHide(RoTStoryLog, RoTShowHide)">
+                            <img src="Images/UI/expandBtn.svg" class = "emote" id = "RoTShowHide">
+                        </span>
+                    </div>
+                    <div class = "outlinedContainer" id="RoTStoryLog" style = "display: none;">
+                        <ul>
+                            <template data-campaignoutline-listitem>
+                                <li>test</li>
+                            </template>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!--Very important to have script link at the bottom-->
+        <script src="Main-page-functioning.js"></script>
+    </body>
+</html>

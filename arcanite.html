@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html> 
+    <head> <!--Head-tag is for all meta-data (non-displayed data)-->
+        <link rel="stylesheet" type="text/css" href="Main-page-style.css" />
+        <title>Arcanite - Varias Wikia</title>
+        <link rel="icon" type="image/x-icon" href = "Images/Favicon (16x16) (black).ico">
+    </head>
+
+    <!--The divs are basically subdivisions, the classes say what they are and they have differing
+    markups in the css-sheet-->
+
+    <body>
+        <div class = "NavBar">
+            <ul>
+                <li><a href = "index.html" class = "NavbarLink">Home</a></li>
+                <li><a href = "map.html" class = "NavbarLink">Map</a></li>
+                <li><a href = "characters.html" class = "NavbarLink">Characters</a></li>
+                <li><a href = "arcanite.html" class = "NavbarLink">Arcanite</a></li>
+                <li><a href = "history.html" class = "NavbarLink">History</a></li>
+                <li><a href = "pantheon.html" class = "NavbarLink">Pantheon</a></li>
+                <li><a href = "races.html" class = "NavbarLink">Races</a></li>
+                <li><form onmouseover = "makeVisible(SearchWrapper)" onmouseleave = "makeHidden(SearchWrapper)">
+                    <input type="search" id="NavBarSearch" name="NavSearchbar" placeholder="Search Varias Wiki">
+                    <div id = "SearchWrapper" style = "visibility: hidden;">
+                        <template data-articleCard-template>
+                            <div class = "SearchCards" style = "display: block;" data-card>
+                            </div>
+                        </template>
+                    </div>
+                </form></li>
+            </ul>
+        </div>
+        <div class = "MainTextContainer">
+            <div class = "ContainerHeader" id="MainPageHeader">
+                Arcanite
+            </div>
+            <div class = "ContainerText" id = "MainText">
+               <p>Arcanite is a metalloïd with a myriad of interesting magical properties. As a result it is used all over Varias for a large amount of varying purposes.</p>
+
+               <p>The origins of this mystical metal lay with the dead of the dragon Zizaran: As his body dissipated, various parts of his body scattered all over the world, with the parts of the spine reacting with the soil of Varias, creating the metal we now know as Arcanite. The magical properties of this metal arise from the fact that they are really the remains of a godly creature. Scholars still debate whether arcanization (a theoretical process whereby the remains of celestial creatures gets transferred into arcanite-like substances) was unique to Zizaran, or if the remains of other gods can also spawn arcanite.</p>
+
+               <p>Because of its strange origin, Arcanite is also a non-natural substance, ergo it’s incredibly rare and only a few select places in the world have Arcanite deposits, currently there are two known locations in the entire world where arcanite can be found:
+                <ul>
+                    <li>An undisclosed place from which the Arcane-Isles mafia gets its arcanite.</li>
+                    <ul>
+                        <li>This the largest known deposit and for a long time the only one known.</li>
+                        <li>Said to lay East of the Arcane Isles.</li>
+                    </ul>
+                    <li>The deepest sectors of the <span class="inTextref"><a href="loc_raptusmagna.html">Raptus Magna Mine-conglomerate.</a></span></li>
+                    <ul>
+                        <li>This one was only discovered 60 or so years ago, as a result it hasn’t been fully excavated yet and isn’t running at maximum efficiency.</li>
+                    </ul>
+                </ul></p>
+
+                <h1>Properties of Arcanite</h1>
+                    <p>Arcanite in its raw form can be distinguished as an amethyst-coloured light-emitting metal. It is as dense as Aluminium and as hard as Wolfram. Furthermore it has an incredibly high melting point, so high in fact that contemporary measuring equipment is unable to measure it, the only known flame known to melt Arcanite is the plasma of a Purple-dragon.</p>
+
+                    <p>In its liquid form Arcanite is incredibly volatile, it will explode if it comes in contact with oxygen, in a perfect vacuum it will still keep its volatile properties by sending out high-energy power pulses until it has used up all of its energy, the arcanite will turn into a fine black dust which will undergo necrosis and disappear. Because of its volatile properties in its liquid state, engineers have debated if it could be used as a powerful fuel for machines, in the known world these theories have yet to be tested.</p>
+
+                    <p>As said previously Arcanite, after using up all its power undergoes necrosis, suggesting that it is still a biological material and furthermore that it is in a sense alive before using up all its power, this is correct. Arcanite is to a certain degree alive and even animate. A piece of Arcanite, when in a person’s possession for long enough will try to start a conversation with its host telepathically, using the voice of the hosts persons. These conversations in the early stages always follow the template of the arcanite inquiring about its user, never does the arcanite tell anything about itself. Over time the “personality” of the arcanite will become more and more like the personality of its host, and resultantly it will also start to speak more to its host as if it is a real person, one with a personality and goals similar to its host. As the personality of the Arcanite attunes to its host, so will its metaphysical and arcane properties, Each country has different applications for this arcanite, however two are most prominent Antaria’s Soul forging and The Arcane Isles’ Aether-Tech.</p>
+                
+                <h1>Arcanite Arts</h1>
+                    <p>Given its unique properties, Arcanite has spawned a myriad of arcane techniques, which are listed here:
+                        <ul>
+                            <li><a href="soulforging.html">Soul-forging</a></li>
+                            <li><a href="aethertech.html">Aether-tech</a></li>
+                            <li><a href="brimstonefirearms.html">Brimstone Firearms</a></li>
+                        </ul>
+                    </p>
+            </div>
+        </div> 
+
+        <!--Very important to have script link at the bottom-->
+        <script src="Main-page-functioning.js"></script>
+    </body>
+</html>

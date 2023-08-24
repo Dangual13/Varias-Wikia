@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html> 
+    <head> <!--Head-tag is for all meta-data (non-displayed data)-->
+        <link rel="stylesheet" type="text/css" href="Main-page-style.css" />
+        <title>Eroph - Varias Wikia</title>
+        <link rel="icon" type="image/x-icon" href = "Images/Favicon (16x16) (black).ico">
+    </head>
+
+    <!--The divs are basically subdivisions, the classes say what they are and they have differing
+    markups in the css-sheet-->
+
+    <body>
+        <div class = "NavBar">
+            <ul>
+                <li><a href = "index.html" class = "NavbarLink">Home</a></li>
+                <li><a href = "map.html" class = "NavbarLink">Map</a></li>
+                <li><a href = "characters.html" class = "NavbarLink">Characters</a></li>
+                <li><a href = "arcanite.html" class = "NavbarLink">Arcanite</a></li>
+                <li><a href = "history.html" class = "NavbarLink">History</a></li>
+                <li><a href = "pantheon.html" class = "NavbarLink">Pantheon</a></li>
+                <li><a href = "races.html" class = "NavbarLink">Races</a></li>
+                <li><form onmouseover = "makeVisible(SearchWrapper)" onmouseleave = "makeHidden(SearchWrapper)">
+                    <input type="search" id="NavBarSearch" name="NavSearchbar" placeholder="Search Varias Wiki">
+                    <div id = "SearchWrapper" style = "visibility: hidden;">
+                        <template data-articleCard-template>
+                            <div class = "SearchCards" style = "display: block;" data-card>
+                            </div>
+                        </template>
+                    </div>
+                </form></li>
+            </ul>
+        </div>
+        <div class = "MainTextContainer">
+            <div class = "ContainerHeader" id="MainPageHeader">
+                Eroph
+            </div>
+            <div>
+            <div class = "ContainerText" id = "MainText">
+                <aside class = "InfoBox">
+                    <div class = "InfoBoxHeader">Eroph</div>
+                    <div class = "InfoImagebox">
+                        <img src="Images/Favicon.svg">
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Nations</div>
+                        <div class="InfoBoxContents">
+                            <p><li>Antaria</li></p>
+                            <p><li>Foronia</li></p>
+                            <p><li>Phalia</li></p>
+                        </div>
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Campaigns</div>
+                        <div class="InfoBoxContents">
+                            <p><li>The Antarian War</li></p>
+                        </div>
+                    </div>
+                </aside>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                
+                <div class="TableOfContents" id="ToC" style="display: block">
+                    <div class="ToCHeader">Table of Contents</div>
+                    <template data-toc-link>
+                        <div class="ToCLink"></div>
+                    </template>
+                </div>
+
+                <h1 id = "Political_Entities">Political Entities</h1>
+                <p>....</p>
+
+                <h1 id = "Geography">Geography</h1>
+                <p>...</p>
+
+                <h1 id = "Flora">Flora</h1>
+                <p>...</p>
+
+                <h1 id = "Map">Map</h1>
+            </div>
+        </div> 
+
+        <!--Very important to have script link at the bottom-->
+        <script src="Main-page-functioning.js"></script>
+    </body>
+</html>

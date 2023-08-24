@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html> 
+    <head> <!--Head-tag is for all meta-data (non-displayed data)-->
+        <link rel="stylesheet" type="text/css" href="Main-page-style.css" />
+        <title>Lances of Siez - Varias Wikia</title>
+        <link rel="icon" type="image/x-icon" href = "Images/Favicon (16x16) (black).ico">
+    </head>
+
+    <!--The divs are basically subdivisions, the classes say what they are and they have differing
+    markups in the css-sheet-->
+
+    <body>
+        <div class = "NavBar">
+            <ul>
+                <li><a href = "index.html" class = "NavbarLink">Home</a></li>
+                <li><a href = "map.html" class = "NavbarLink">Map</a></li>
+                <li><a href = "characters.html" class = "NavbarLink">Characters</a></li>
+                <li><a href = "arcanite.html" class = "NavbarLink">Arcanite</a></li>
+                <li><a href = "history.html" class = "NavbarLink">History</a></li>
+                <li><a href = "pantheon.html" class = "NavbarLink">Pantheon</a></li>
+                <li><a href = "races.html" class = "NavbarLink">Races</a></li>
+                <li><form onmouseover = "makeVisible(SearchWrapper)" onmouseleave = "makeHidden(SearchWrapper)">
+                    <input type="search" id="NavBarSearch" name="NavSearchbar" placeholder="Search Varias Wiki">
+                    <div id = "SearchWrapper" style = "visibility: hidden;">
+                        <template data-articleCard-template>
+                            <div class = "SearchCards" style = "display: block;" data-card>
+                            </div>
+                        </template>
+                    </div>
+                </form></li>
+            </ul>
+        </div>
+        <div class = "MainTextContainer">
+            <div class = "ContainerHeader" id="MainPageHeader">
+                Lances of Siez
+            </div>
+            <div>
+            <div class = "ContainerText" id = "MainText">
+                <aside class = "InfoBox">
+                    <div class = "InfoBoxHeader">Lances of Siez</div>
+                    <div class = "InfoImagebox">
+                        <img src="Images/Logos/Lances of Siez.svg" label = "lances_logo_infobox">
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Alignment</div>
+                        <div class="InfoBoxContents">
+                            <p>Lawful Good (formerly)</p>
+                            <p>Lawful Evil</p>
+                        </div>
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Goal</div>
+                        <div class="InfoBoxContents">
+                            <p>Destruction of the Foronian Confederacy</p>
+                        </div>
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Leader</div>
+                        <div class="InfoBoxContents">
+                            <p>Fausto Emirez</p>
+                        </div>
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Current Lances</div>
+                        <div class="InfoBoxContents">
+                            <p>Fausto Emirez</p>
+                            <p>Teris the Golden</p>
+                            <p>Morveth von Helsing</p>
+                            <p>Sargus Tarspire</p>
+                            <p>Carthargus Aemo</p>
+                            <p>Valentine Everrose</p>
+                            <p>Shudao the Merciful</p>
+                        </div>
+                    </div>
+                    <div class="InfoTextbox">
+                        <div class="InfoContentsHeader">Alegiance</div>
+                        <div class="InfoBoxContents">
+                            <p>Antarian Empire</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <p>
+                    Once legendary warriors led by Siëz who conquered many lands across Antaria are now an elite knightly order who terrorises the continent of Eroph.
+                    Under Siez they fought many battles in the Antarian Plains against the demonic Praenoxes as they were carving out a bastion for humanity in the wilderness that was Eroph at the time. After the fall of their leader Siëz during the Banishing Wars, they fulfilled their deceased leader’s final wish of completing the city of Seieco. With no leader left the Lances of Siez decided on a democratic model for their new city-state. Seieco prospered for many years along with its sister-city Raptus Magna, which was built as an outpost in the cavern left behind by the Banishing Wars.
+                    During this “democratic period” the Lances of Siëz became the elite warrior corps of the Tribe and upheld a great moral code until Luctor became Chieftain and turned the city state of Seieco into the Antarian Empire. As the Empire expanded and the role of Emperor started becoming more and more ceremonial, the Lances of Siez, being the largest and oldest military force in the Empire, started becoming increasingly powerful and became the de-facto rulers of the continent, attracting various individuals to conscript amongst their ranks which weren't very keen on upholding the previously chivalric moral code.
+                </p>
+
+                <div class="TableOfContents" id="ToC" style="display: block">
+                    <div class="ToCHeader">Table of Contents</div>
+                    <template data-toc-link>
+                        <div class="ToCLink"></div>
+                    </template>
+                </div>
+
+                <h1 id="Siez'_Long_March">Siez' Long March</h1> <!--Make sure to never seperate id-names with actual spaces, otherwise problems may arise when processing in javascript-->
+                <p>
+                    ...
+                </p>
+
+                <h1 id="The_Banishing_Wars">The Banishing Wars</h1>
+                <p>
+                    ...
+                </p>
+
+                <h1 id="Founding_of_Seieco">Founding of Seieco</h1>
+                <p>
+                    ...
+                </p>
+
+                <h1 id="A_Republic">A Republic</h1>
+                <p>
+                    ...
+                </p>
+
+                <h1 id="Luctor_and_the_Lances">Luctor and the Lances</h1>
+                <p>
+                    ...
+                </p>
+
+                <h1 id="Solus,_Sunbearer">Solus, Sunbearer</h1>
+                <p>
+                    ...
+                </p>
+
+                <h1 id="The_Foronian_War">The Foronian War</h1>
+                <p>
+                    ...
+                </p>
+            </div>
+        </div> 
+
+        <!--Very important to have script link at the bottom-->
+        <script src="Main-page-functioning.js"></script>
+    </body>
+</html>
