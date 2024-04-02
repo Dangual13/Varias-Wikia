@@ -279,7 +279,6 @@ hr{
     margin-right: 10%;
     background-color: #015b86ff;
     background: url('Images/Backgrounds/wave-texture.svg');
-    width: 1500px;
     height: 750px;
     margin-top: -8%;
     border: 5px solid;
@@ -329,7 +328,7 @@ path{
     z-index: 5;
 }
 #TextWrapper{
-    transform: scale(0.8, 0.8) translate(35%, 25%);
+    transform: scale(0.8, 0.8) translate(33%, 25%);
     position: relative;
     overflow: scroll;
     z-index: 4;
